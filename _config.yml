@@ -1,0 +1,24 @@
+# Minima theme-specific configurations
+theme: minima
+
+# Site settings
+title: My Colorful Site
+description: A colorful GitHub Pages site
+baseurl: ""
+url: "https://joeproit.github.io"
+
+# Customization options
+author:
+  name: JoePro
+  email: git@joeproit.com
+  url: "https://joeproit.github.io"
+
+# Color customization
+colors:
+  primary: "#ffd700"  # Gold color
+  text: "#ffffff"    # White color
+  background: "#000000"  # Black color
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
