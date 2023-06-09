@@ -5,10 +5,20 @@ fetch('https://api.github.com/users/joeproit/repos')
     const sortedRepos = data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
     // Get the last 4 updated repositories
-    const last4Repos = sortedRepos.slice(0, 4);
+    const last4Repos = sortedRepos.slice(0, 3);
 
     // Generate the HTML for repository cards
     const repoListElement = document.getElementById('repoList');
+    const section = document.createElement('section');
+    section.className = 'featured-courses bg-gray-200 py-16';
+
+    const container = document.createElement('div');
+    container.className = 'container mx-auto px-4';
+
+    const sectionTitle = document.createElement('h2');
+    sectionTitle.className = 'text-3xl font-bold mb-8';
+    sectionTitle.textContent = 'Repositories';
+
     const grid = document.createElement('div');
     grid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8';
 
@@ -38,9 +48,14 @@ fetch('https://api.github.com/users/joeproit/repos')
       grid.appendChild(card);
     });
 
-    // Clear previous content and append the grid to the container
+    // Append section title, grid, and container to section
+    container.appendChild(sectionTitle);
+    container.appendChild(grid);
+    section.appendChild(container);
+
+    // Clear previous content and append the section to the repository list element
     repoListElement.innerHTML = '';
-    repoListElement.appendChild(grid);
+    repoListElement.appendChild(section);
   })
   .catch(error => {
     console.log('Error:', error);
