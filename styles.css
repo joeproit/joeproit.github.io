@@ -64,7 +64,7 @@ body {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  font-family: 'Artistic Font', cursive;
+  font-family: 'Black Ops One', sans-serif;
 }
 
 .hero p {
@@ -96,7 +96,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Artistic Font', cursive;
+  font-family: 'Black Ops One', sans-serif;
 }
 
 .repository-card {
@@ -182,7 +182,7 @@ body {
   margin-bottom: 1rem;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Artistic Font', cursive;
+  font-family: 'Black Ops One', sans-serif;
 }
 
 .profile {
@@ -211,7 +211,7 @@ body {
   font-weight: bold;
   margin-top: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Artistic Font', cursive;
+  font-family: 'Black Ops One', sans-serif;
 }
 
 .profile p {
