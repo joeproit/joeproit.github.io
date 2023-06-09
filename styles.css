@@ -1,98 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-  margin: 0;
-  padding: 0;
+  --color-primary: #000000;  /* Black */
+  --color-secondary: #FFFFFF;  /* White */
+  --color-accent: #FF0000;  /* Red */
+  --color-background: #FFFFFF;  /* White */
+  --color-text: #000000;  /* Black */
+  --color-muted: #777777;  /* Gray */
+
+  font-family: 'Black Ops One', sans-serif;
+  color: var(--color-text);
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background-color: var(--color-primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: var(--color-secondary);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+.main-content {
+  margin-top: 65px;
+}
+
+.hero {
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-h1 {
-  color: #d0a741;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Artistic Font', cursive;
 }
 
-p {
-  color: #000000;
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 20px auto;
-}
-
-.social-links {
-  margin: 20px 0;
-}
-
-.social-links a {
+.button {
   display: inline-block;
-  margin: 0 10px;
-  color: #000000;
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  transition: color 0.3s;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.social-links a:hover {
-  color: #d0a741;
+.button:hover {
+  background-color: var(--color-secondary);
 }
 
-.shields {
-  margin: 20px 0;
+.repositories {
+  padding: 4rem 2rem;
 }
 
-.projects {
-  margin: 40px 0;
-  text-align: left;
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Artistic Font', cursive;
 }
 
-.projects h2 {
-  color: #000000;
+.repository-card {
+  background-color: var(--color-background);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.projects ul {
-  list-style-type: none;
-  padding: 0;
+.repository-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
-.projects li {
-  margin-bottom: 10px;
+.repository-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.projects li a {
-  color: #000000;
+.repository-description {
+  font-size: 1rem;
+  color: var(--color-muted);
+}
+
+.support {
+  padding: 4rem 2rem;
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--color-primary);
+  padding: 2rem 0;
+  color: var(--color-secondary);
+  font-size: 0.8rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--color-secondary);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.projects li a:hover {
-  color: #d0a741;
+.footer-links a:hover {
+  color: var(--color-accent);
 }
 
-.external-links {
-  margin: 40px 0;
+.about-joe {
+  padding: 4rem 2rem;
 }
 
-.external-links ul {
-  list-style-type: none;
-  padding: 0;
+.about-joe .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.external-links li {
-  margin-bottom: 10px;
+.about-joe h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: var(--color-secondary);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Artistic Font', cursive;
 }
 
-.external-links li a {
-  color: #000000;
-  text-decoration: none;
+.profile {
+  background-color: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.external-links li a:hover {
-  color: #d0a741;
+.profile:hover {
+  transform: translateY(-5px);
+}
+
+.profile-image {
+  background-color: var(--color-muted);
+  height: 16rem;
+  border-radius: 0.5rem;
+}
+
+.profile h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--color-secondary);
+  font-weight: bold;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Artistic Font', cursive;
+}
+
+.profile p {
+  color: var(--color-muted);
+  margin-top: 0.5rem;
 }

@@ -1,40 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>My Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoeProIT</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <div class="container">
-    <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>JoePro</h1>
-    <p>Thing Doer</p>
-    <div class="social-links">
-      <a href="https://github.com/joeproit" target="_blank">GitHub</a>
-      <a href="#" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">Twitter</a>
-    </div>
-    <p>Derp derp derp.</p>
-    <div class="shields">
-      <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status: Active">
-      <img src="https://img.shields.io/github/followers/joeproit?label=Followers" alt="GitHub followers">
-      <img src="https://img.shields.io/github/stars/joeproit?label=Stars" alt="GitHub stars">
-    </div>
-    <div class="projects">
-      <h2>Active Projects</h2>
-      <ul>
-        <li><a href="https://github.com/joeproit/COBOL" target="_blank">COBOL</a></li>
-        <li><a href="https://github.com/joeproit/jobsearch-timetracker" target="_blank">Time Tracker</a></li>
-        <li><a href="https://github.com/joeproit/PowerShellDump" target="_blank">PowerShellDump</a></li>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container flex items-center justify-between px-4 py-3">
+      <div class="logo">
+        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
+      </div>
+      <ul class="nav-links flex items-center">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Repositories</a></li>
+        <li><a href="#">About JoePro</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Sign In</a></li>
       </ul>
     </div>
-    <div class="external-links">
-      <h2>External Links</h2>
-      <ul>
-        <li><a href="#" target="_blank">Website</a></li>
-        <li><a href="#" target="_blank">Derp</a></li>
-      </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Hero Section -->
+    <section class="hero bg-black text-white">
+      <div class="container mx-auto px-4 py-16">
+        <h1 class="text-5xl font-bold mb-4">JoePro Github</h1>
+        <p class="text-2xl mb-8">Derp</p>
+        <a href="#" class="button">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Repositories Section -->
+    <section class="featured-courses bg-gray-200 py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Repositories</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Repository Card 1 -->
+          <div class="course-card">
+            <img src="https://via.placeholder.com/500x300?text=Repo+1" alt="Repository 1">
+            <h3 class="course-title">Repository 1</h3>
+            <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <!-- Repository Card 2 -->
+          <div class="course-card">
+            <img src="https://via.placeholder.com/500x300?text=Repo+2" alt="Repository 2">
+            <h3 class="course-title">Repository 2</h3>
+            <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <!-- Repository Card 3 -->
+          <div class="course-card">
+            <img src="https://via.placeholder.com/500x300?text=Repo+3" alt="Repository 3">
+            <h3 class="course-title">Repository 3</h3>
+            <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <!-- Add more repository cards as needed -->
+        </div>
+      </div>
+    </section>
+
+   <!-- Projects Section -->
+<section class="projects-section py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8">Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/500x300?text=Project+1" alt="Project 1">
+        <h3 class="project-title">Project 1</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/500x300?text=Project+2" alt="Project 2">
+        <h3 class="project-title">Project 2</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/500x300?text=Project+3" alt="Project 3">
+        <h3 class="project-title">Project 3</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Add more project cards as needed -->
     </div>
   </div>
+</section>
+
+
+    <!-- About JoePro Section -->
+    <section class="coaches-section bg-gray-900 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-4xl text-white font-bold mb-4">About JoePro</h2>
+        <div class="grid grid-cols-2 gap-8">
+          <div class="coach">
+            <div class="coach-image bg-gray-200 h-64"></div>
+            <h3 class="text-2xl text-white font-bold mt-4">Joe Pro</h3>
+            <p class="text-gray-500">JoePro Tech and Activist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="footer bg-primary text-white py-8">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <!-- Socials -->
+      <div class="footer-column">
+        <h3 class="text-lg font-bold mb-2">Socials</h3>
+        <ul class="footer-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div class="footer-column">
+        <h3 class="text-lg font-bold mb-2">Projects</h3>
+        <ul class="footer-links">
+          <li><a href="#">Project 1</a></li>
+          <li><a href="#">Project 2</a></li>
+          <li><a href="#">Project 3</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-column">
+        <h3 class="text-lg font-bold mb-2">Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
 </body>
+
 </html>
