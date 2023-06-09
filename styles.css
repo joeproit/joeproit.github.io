@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Input+Mono&display=swap');
 
 body {
   --color-primary: #000000;  /* Black */
@@ -8,7 +8,7 @@ body {
   --color-text: #000000;  /* Black */
   --color-muted: #777777;  /* Gray */
 
-  font-family: 'Black Ops One', sans-serif;
+  font-family: 'Input Mono', monospace;
   color: var(--color-text);
 }
 
@@ -64,7 +64,7 @@ body {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  font-family: 'Black Ops One', sans-serif;
+  font-family: 'Input Mono', monospace;
 }
 
 .hero p {
@@ -96,7 +96,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Black Ops One', sans-serif;
+  font-family: 'Input Mono', monospace;
 }
 
 .repository-card {
@@ -182,7 +182,7 @@ body {
   margin-bottom: 1rem;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Black Ops One', sans-serif;
+  font-family: 'Input Mono', monospace;
 }
 
 .profile {
@@ -211,7 +211,7 @@ body {
   font-weight: bold;
   margin-top: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Black Ops One', sans-serif;
+  font-family: 'Input Mono', monospace;
 }
 
 .profile p {
