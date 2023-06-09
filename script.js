@@ -17,7 +17,7 @@ fetch('https://api.github.com/users/joeproit/repos')
 
     const sectionTitle = document.createElement('h2');
     sectionTitle.className = 'text-3xl font-bold mb-8';
-    sectionTitle.textContent = 'Repositories(Last 9 Updated)';
+    sectionTitle.textContent = 'Repositories (Last 9 Updated)';
 
     const grid = document.createElement('div');
     grid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8';
@@ -33,7 +33,7 @@ fetch('https://api.github.com/users/joeproit/repos')
       card.className = 'course-card';
 
       const image = document.createElement('img');
-      image.src = 'https://via.placeholder.com/500x300?text=' + repo.name;
+      image.src = 'https://raw.githubusercontent.com/username/' + repo.name + '/master/repo-card.png';
       image.alt = repo.name;
 
       const title = document.createElement('h3');
