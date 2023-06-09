@@ -1,65 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>JoePro</title>
+  <title>JoeProIT</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
-    <div class="container mx-auto flex items-center justify-between">
+    <div class="container flex items-center justify-between px-4 py-3">
       <div class="logo">
-        <img src="logo.png" alt="Logo">
+        <h1 class="text-5xl font-bold mb-4 text-white">JoePro Github</h1>
       </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#repositories">Repositories</a></li>
-        <li><a href="#about-joe">About JoePro</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav-links flex items-center">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Repositories</a></li>
+        <li><a href="#">About JoePro</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Sign In</a></li>
       </ul>
     </div>
   </nav>
 
-  <section id="home" class="hero">
-    <div class="container mx-auto">
-      <h1>Welcome to JoePro</h1>
-      <p>Your one-stop destination for IT solutions</p>
-      <a href="#repositories" class="button">Explore Repositories</a>
-    </div>
-  </section>
-
-  <section id="repositories" class="repositories">
-    <div class="container mx-auto">
-      <h2 class="section-title">Repositories</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        <!-- Repository Item 1 -->
-        <div class="repository-card">
-          <img src="repository1.png" alt="Repository 1">
-          <h3 class="repository-title">Repository 1</h3>
-          <p class="repository-description">Description of Repository 1</p>
-        </div>
-
-        <!-- Repository Item 2 -->
-        <div class="repository-card">
-          <img src="repository2.png" alt="Repository 2">
-          <h3 class="repository-title">Repository 2</h3>
-          <p class="repository-description">Description of Repository 2</p>
-        </div>
-
-        <!-- Repository Item 3 -->
-        <div class="repository-card">
-          <img src="repository3.png" alt="Repository 3">
-          <h3 class="repository-title">Repository 3</h3>
-          <p class="repository-description">Description of Repository 3</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about-joe" class="about-joe">
-    <div class="container mx-auto">
-      <h2 class="section-title">About JoePro</h2>
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Hero Section -->
+  <section id="about-joe" class="hero bg-black text-white">
+    <div class="container mx-auto px-4 py-16">
+      <h2 class="section-title text-5xl font-bold mb-4 text-white">About JoePro</h2>
       <div class="flex flex-col md:flex-row justify-between">
         <div class="profile">
           <div class="profile-image"></div>
@@ -74,49 +47,115 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="container mx-auto">
-      <h2 class="section-title">Contact</h2>
-      <form class="contact-form">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="email" placeholder="Your Email">
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <!-- Repositories Section -->
+    <section class="featured-courses bg-gray-200 py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Repositories</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Repository Card 1 -->
+          <div class="course-card">
+            <img src="https://via.placeholder.com/500x300?text=Repo+1" alt="Repository 1">
+            <h3 class="course-title">Repository 1</h3>
+            <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
 
-  <footer class="footer">
-    <div class="container mx-auto">
-      <div class="footer-columns">
-        <div class="footer-column">
-          <h3>Socials</h3>
-          <ul class="footer-links">
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Projects</h3>
-          <ul class="footer-links">
-            <li><a href="#repositories">Repositories</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">GitHub</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Support</h3>
-          <ul class="footer-links">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
+          <!-- Repository Card 2 -->
+          <div class="course-card">
+            <img src="https://via.placeholder.com/500x300?text=Repo+2" alt="Repository 2">
+            <h3 class="course-title">Repository 2</h3>
+            <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <!-- Repository Card 3 -->
+          <div class="course-card">
+            <img src="https://via.placeholder.com/500x300?text=Repo+3" alt="Repository 3">
+            <h3 class="course-title">Repository 3</h3>
+            <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <!-- Add more repository cards as needed -->
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="app.js"></script>
+<!-- Projects Section -->
+<section class="projects-section py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8">Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/500x300?text=Project+1" alt="Project 1">
+        <h3 class="project-title">Project 1</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/500x300?text=Project+2" alt="Project 2">
+        <h3 class="project-title">Project 2</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/500x300?text=Project+3" alt="Project 3">
+        <h3 class="project-title">Project 3</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Add more project cards as needed -->
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact-->
+            
+    
+    <section id="contact" class="contact">
+      <div class="container mx-auto">
+        <h2 class="section-title text-5xl font-bold mb-4 text-white">Contact</h2>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Your Email">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="container mx-auto">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Socials</h3>
+            <ul class="footer-links">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Projects</h3>
+            <ul class="footer-links">
+              <li><a href="#repositories">Repositories</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul class="footer-links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
