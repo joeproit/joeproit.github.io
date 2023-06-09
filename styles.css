@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Input+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Input+Mono&display=swap');
 
 body {
   --color-primary: #000000;  /* Black */
@@ -10,6 +10,8 @@ body {
 
   font-family: 'Input Mono', monospace;
   color: var(--color-text);
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
