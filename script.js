@@ -33,7 +33,7 @@ fetch('https://api.github.com/users/joeproit/repos')
       card.className = 'course-card';
 
       const image = document.createElement('img');
-      image.src = 'https://raw.githubusercontent.com/username/' + repo.name + '/master/repo-card.png';
+      image.src = 'https://raw.githubusercontent.com/joeproit/' + repo.name + '/master/repo-card.png';
       image.alt = repo.name;
 
       const title = document.createElement('h3');
