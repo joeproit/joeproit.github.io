@@ -5,7 +5,7 @@ fetch('https://api.github.com/users/joeproit/repos')
     const sortedRepos = data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
     // Get the last 4 updated repositories
-    const last4Repos = sortedRepos.slice(0, 3);
+    const last4Repos = sortedRepos.slice(0, 9);
 
     // Generate the HTML for repository cards
     const repoListElement = document.getElementById('repoList');
@@ -23,6 +23,11 @@ fetch('https://api.github.com/users/joeproit/repos')
     grid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8';
 
     last4Repos.forEach(repo => {
+      // Create repository card link
+      const cardLink = document.createElement('a');
+      cardLink.href = repo.html_url;
+      cardLink.target = '_blank';
+
       // Create repository card elements
       const card = document.createElement('div');
       card.className = 'course-card';
@@ -39,13 +44,21 @@ fetch('https://api.github.com/users/joeproit/repos')
       description.className = 'course-description';
       description.textContent = repo.description;
 
+      const lastUpdated = document.createElement('p');
+      lastUpdated.className = 'course-last-updated';
+      lastUpdated.textContent = 'Last Updated: ' + new Date(repo.updated_at).toLocaleDateString();
+
       // Append elements to repository card
       card.appendChild(image);
       card.appendChild(title);
       card.appendChild(description);
+      card.appendChild(lastUpdated);
 
-      // Append repository card to grid
-      grid.appendChild(card);
+      // Append repository card to link
+      cardLink.appendChild(card);
+
+      // Append link to grid
+      grid.appendChild(cardLink);
     });
 
     // Append section title, grid, and container to section
