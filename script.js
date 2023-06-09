@@ -17,7 +17,7 @@ fetch('https://api.github.com/users/joeproit/repos')
 
     const sectionTitle = document.createElement('h2');
     sectionTitle.className = 'text-3xl font-bold mb-8';
-    sectionTitle.textContent = 'Repositories';
+    sectionTitle.textContent = 'Repositories(Last 9 Updated)';
 
     const grid = document.createElement('div');
     grid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8';
